@@ -1,0 +1,267 @@
+   
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#showcase { 
+    background: 
+    linear-gradient(to bottom , rgba(252, 153, 124,0.2) , rgba(250, 81, 30, 0.2)) ,
+    url('../IMG/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+#showcase .content {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    background-color: rgba(46, 76, 109,0.3);
+    padding: 20px;
+    width: 60%;
+    border-radius: 12px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-header {
+    background-color: #FFC6AC;
+    padding: 8px 16px;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+}
+
+#showcase h1 {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    color: #fff;
+    font-size: 45px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main {
+margin-top: 40px;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 101px);
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav__item a:hover, .main-nav__item:hover::before {
+    color: #2E4C6D;
+}      
+
+.main-nav__item:active::before, .main-nav__item a:active {
+    color: #fff;
+}
+
+.main-nav__item::before {
+    content: '\2022';
+    color: #fff;
+}
+
+.main-nav__item--login a {
+    color: #fff;
+    background-color: #2E4C6D;
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    transition-duration: 0.4s;
+}
+
+.main-nav__item--login a:hover {
+    color: #2E4C6D;
+    border: 2px solid #2E4C6D;
+    background-color: #fff;
+}
+
+.main-nav__item--login::before {
+    content:none;
+}
+
+#how-it-works { 
+    padding: 10px;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 40px;
+}
+
+.col-3 {
+    display: inline-block;
+    width: 30%;
+    padding: 16px;
+    margin: 8px;
+}
+
+.col-2 {
+    display: inline-block;
+    width: calc(50% - 2px);
+    height: 350px;
+}
+
+.icon-box h3 {
+    color: #3e4555;
+    font-size: 26px;
+}
+
+.icon-box i {
+    color: #FFC6AC;
+}
+
+.features__left {
+    background: 
+    linear-gradient(to bottom , rgba(252, 153, 124,0.2) , rgba(250, 81, 30, 0.2)) ,
+    url('../IMG/features.jpeg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.features__right {
+    background-color: #ECF8F9;
+    padding: 40px;
+    vertical-align: top;
+}
+
+.features__right h3 {
+    font-size: 30px;
+}
+
+#features a {
+    background-color: #9F91CC;
+    color: #fff;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #9F91CC;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 15px;
+    transition-duration: 0.4s;
+}
+
+#features a:hover {
+    border: 1px solid #9F91CC;
+    color: #9F91CC;
+    background-color: #fff;
+}
+
+.plans-h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3e4555;
+    font-size: 30px;
+}
+.container{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.plan {
+    text-align: center;
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+}
+.inner-planer{
+    background-color: #ECF8F9;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px 10px #888888;
+    transition: box-shadow 0.3s;
+}
+.inner-planer:hover{
+    box-shadow: 5px 10px 20px 13px #888888;
+}
+.plans::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+.plan button {
+    background-color: #9F91CC;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px;
+    border: 2px solid #9F91CC;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+.plan button:hover {
+    color: #9F91CC;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 3px;
+    border: 2px solid #9F91CC;;
+    background-color: #fff;
+    cursor:pointer;    
+}
+.recommended_plan {
+    background: #FDE5EC!important;
+}
+.plan__features {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.plan__features li {
+    margin: 6px 0px;
+}
+
+.plan--featured {
+    position: relative;
+    top: -10px;
+}
+.backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 45px;
+    color: #9F91CC;
+}
+
+.backtotop:hover {
+    color: #FFC6AC;
+    transition: color 0.3s;
+}
